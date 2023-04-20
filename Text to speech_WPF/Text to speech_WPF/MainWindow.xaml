@@ -1,0 +1,20 @@
+﻿<Window x:Class="Text_to_speech_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Text_to_speech_WPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <TextBox AcceptsReturn="True" Width="200" x:Name="txtText" TextWrapping="Wrap"></TextBox>
+        </ScrollViewer>
+        <Button Grid.Column="1" Content="Talk" Width="50" Height="50" Click="Button_Click"></Button>
+    </Grid>
+</Window>
